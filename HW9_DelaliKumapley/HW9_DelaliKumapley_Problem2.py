@@ -43,11 +43,12 @@ def file_stats(in_file):
     fileStr = myFile2.read()
 
     fileStr.strip(string.punctuation)
+    fileStr.replace('-', ' ')
     strLst = fileStr.split()
 
     for word in strLst:
         wordCount+=1
-        #print(word)
+        # print(word)
         for char in word:
             charCount +=1
 
@@ -57,4 +58,4 @@ def file_stats(in_file):
 
 
 
-print(file_stats('created_equal.txt'))
+#print(file_stats('created_equal.txt'))
