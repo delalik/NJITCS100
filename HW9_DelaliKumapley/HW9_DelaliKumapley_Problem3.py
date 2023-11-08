@@ -31,3 +31,42 @@ sit
 Hint: Be sure to test your solution with input in which some repeated words on a line are a mixture of upper
 and lower case, and in which repeated words sometimes are preceded or followed by punctuation.
 '''
+
+def repeatWords(in_file, out_file):
+    inFile = open(in_file, 'r')
+    outFile = open(out_file, 'w')
+    content = inFile.readlines()
+    import string
+
+    finalDict = {}
+    count = 0
+    for line in content:
+        wordsDict = {}
+        count +=1
+        for word in line.split():
+            if word.islower():
+                if word in wordsDict:
+                    wordsDict[word] += 1
+                else:
+                    wordsDict[word] = 1
+            else:
+                word = word.lower()
+                if word in wordsDict:
+                    wordsDict[word] += 1
+                else:
+                    wordsDict[word] = 1
+        for word in wordsDict:
+            if wordsDict[word] > 1:
+                finalDict[word] = count
+
+    prevValue = None
+    for key in finalDict:
+        if finalDict[key] == prevValue:
+            outFile.write(key.strip(string.punctuation) + " ")
+        else:
+            outFile.write('\n' + key.strip(string.punctuation) + " ")
+
+        prevValue = finalDict[key]
+
+
+print(repeatWords('cat.txt', 'catOut.txt'))
