@@ -29,7 +29,13 @@ def file_stats(in_file):
     for line in lst:
         lineCount += 1
 
+    for elem in lst:
+        for char in elem:
+            if char == ' ':
+                charCount +=1
+
     myFile.close()
+
 
     import string
 
