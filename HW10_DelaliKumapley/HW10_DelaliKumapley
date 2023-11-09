@@ -1,0 +1,28 @@
+#Delali Kumapley
+#CS 100 H11
+#Homework 10
+#Due Date: November 16th
+
+
+Do all of the items below and submit one ZIP file containing all the solutions via Canvas. If you run into a
+problem, post to Canvas describing where you ran into trouble or email your instructor or classroom
+assistant, or ask your question during recitation hours. If you know the answer to someone’s question on
+Canvas, post a response. You get course credit for asking and answering questions in Canvas.
+• Read Chapter 11 (Dictionaries) in the textbook.
+• Read the Python tutorial section 5.5 (Dictionaries). The Python tutorial can be accessed through the
+documentation installed with IDLE:
+    Help  Python Docs  Tutorial  5.5. Dictionaries
+If you are using an alternate IDE, visit:
+https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+to browse the tutorial online.
+• In the Python editor IDLE, create and save a Python file for each problem given. Before submitting
+your solutions via Canvas, ZIP the Python files and name the archive, if your name is Harry Houdini,
+for example,
+    HW10_HarryHoudini.zip. Each Python file must begin with a comment containing your
+name, class and section, the posting date and number of the homework assignment.
+• Write and test. For each problem, write code that satisfies the problem specification. Test your code
+by designing at least three inputs for each problem that you believe are likely to reveal any bug and
+run your code on those inputs. Include the test inputs in the corresponding .py file.
+
+
+
