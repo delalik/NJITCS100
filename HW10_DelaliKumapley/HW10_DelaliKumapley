@@ -24,5 +24,9 @@ name, class and section, the posting date and number of the homework assignment.
 by designing at least three inputs for each problem that you believe are likely to reveal any bug and
 run your code on those inputs. Include the test inputs in the corresponding .py file.
 
+def myFunction(x):
+    result = x**2
+    print(result)
 
+print( myFunction(2))
 
