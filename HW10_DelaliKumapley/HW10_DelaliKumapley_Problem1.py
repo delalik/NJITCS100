@@ -13,3 +13,23 @@ horton = ['I', 'say', 'what', 'I', 'mean', 'and', 'I', 'mean', 'what', 'I', 'say
 print(initialLetterCount(horton))
 {'I': 4, 's': 2, 'w': 2, 'm': 2, 'a': 1}
 '''
+
+def initialLetterCount(wordList):
+    myDict = {}
+    for word in wordList:
+        dictKeys = myDict.keys()
+        if word[0] in dictKeys:
+            myDict[word[0]] += 1
+        else:
+            myDict[word[0]] = 1
+    return myDict
+
+horton = ['I', 'say', 'what', 'I', 'mean', 'and', 'I', 'mean', 'what', 'I', 'say']
+print(initialLetterCount(horton))
+
+horton2 = ['I', 'say', 'What', 'i', 'mean', 'and', 'I', 'mean', 'what', 'I', 'say']
+print(initialLetterCount(horton2))
+
+horton3 = ['Apples', 'applez', 'Apples', 'bananas', 'applez', 'angel', 'angle', 'Boo!', '!', 'cat']
+print(initialLetterCount(horton3))
+
