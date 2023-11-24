@@ -67,6 +67,8 @@ class Dog:
         return self.name + " knows " + newSkill
     def knows(self, checkSkill):
         if(checkSkill in self.tricks):
+            print(self.name + " knows " + checkSkill)
             return True
         else:
+            print(self.name + " does not know " + checkSkill)
             return False
