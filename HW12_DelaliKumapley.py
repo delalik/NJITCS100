@@ -134,15 +134,15 @@ def averageSpeed():
     count = 0
     avg = 0
 
-    while(attempts < 3):
-        if attempts < 2:
+    while(attempts < 2):
+        if attempts < 1:
             fileName = input("Please enter the name of the file:  ")
             if(safeOpen(fileName) == None):
                 attempts += 1
             else:
                 break
         else:
-            fileName = input("Please enter the name of the file.")
+            fileName = input("File not Found. Try Again: ")
             if(safeOpen(fileName) == None):
                 print("Program Quit: Invalid Input")
                 return
@@ -154,6 +154,7 @@ def averageSpeed():
     tableSpeeds = speedOneLine.split()
 
     usableSpeeds = []
+
 
     for num in tableSpeeds:
         #  intNum = (int)(num)
@@ -175,4 +176,3 @@ def averageSpeed():
     #print(usableSpeeds)
 
 #averageSpeed()
-
